@@ -4,6 +4,7 @@ import { Navbar } from "./components/header";
 import { Home } from "./pages/home";
 import { Order } from "./pages/order";
 import { Login } from "./pages/login";
+import { About } from "./pages/about";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
             <Route path={"/"} element={<Home />}/>
             <Route path={"/order"} element={<Order/>}/>
             <Route path={"/login"} element={<Login/>}/>
+            <Route path={"/about"} element={<About/>}/>
           </Routes>
         </div>
       </Router>

@@ -1,11 +1,12 @@
-import { Box, Typography, Grid } from "@mui/material";
+import { Box, Typography, Grid, Button } from "@mui/material";
+import { Link } from "react-router-dom";
 export const Cart = (props) => {
     const { img, name, time } = props.el;
-    console.log(img)
     return (
         <Grid
             item
             xs={4}
+            mt={2}
         >
             <Box
             >
@@ -17,6 +18,11 @@ export const Cart = (props) => {
                 {name}
             </Typography>
             <Typography variant="h6" >{time}</Typography>
+            <Button
+                variant="contained"
+            >  
+             <Link  style={{textDecoration: 'none'}} to='/about' state={props.el}> Дэлгэрэнгүй </Link>
+              </Button>
         </Grid>
     )
 }
