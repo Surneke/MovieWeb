@@ -1,54 +1,37 @@
-import {Container,Box, Typography, Button} from "@mui/material"
-import { useLocation } from "react-router-dom"
+import { Container, Box, Typography, Button } from "@mui/material";
+import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
-import '../App.css';
+import "../App.css";
 
 export const About = () => {
-    const location = useLocation()
-    const state = location.state
-    console.log()
-    return(
-        
-        <Container>
-            <Box
-                display='flex'
-                gap='30px'
+  const location = useLocation();
+  const state = location.state;
+  console.log();
+  return (
+    <Container>
+      <Box display="flex" gap="30px">
+        <img height="800px" alt="logo" src={state.img} />
+        <Box
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+          flexDirection="column"
+        >
+          <Typography variant="h3">{state.name}</Typography>
+          <p>Дэлгэцнээ гарах: </p>
+          <p>{state.date}</p>
+          <Typography variant="h5">{state.continueTime}</Typography>
+          <p>{state.description}</p>
+          <Button variant="contained">
+            <Link
+              style={{ textDecoration: "none", color: "#f0f0f0" }}
+              to="/order"
             >
-                    <img 
-                        height='800px' 
-                        alt="logo" 
-                        src={state.img}
-                    />
-                <Box
-                    display='flex'
-                    justifyContent="center"
-                    alignItems="center"
-                    flexDirection="column"
-                >
-                    <Typography
-                        variant="h3"
-                    >
-                        {state.name}
-                    </Typography>
-                    <p>Дэлгэцнээ гарах: </p>
-                    <p>{state.date}</p>
-                    <Typography
-                        variant="h5"
-                    >
-                        {state.continueTime}
-                        
-                    </Typography>
-                    <p>{state.description}</p>
-                    <Button
-                        variant="contained"
-                    >
-                        <Link 
-                    style={{textDecoration: 'none', color: '#f0f0f0'}} to="/order"
-                    >
-                    Захиалга
-                    </Link></Button>
-                </Box>
-            </Box>
-        </Container>
-    )
-}
+              Захиалга
+            </Link>
+          </Button>
+        </Box>
+      </Box>
+    </Container>
+  );
+};
