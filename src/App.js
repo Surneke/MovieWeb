@@ -1,10 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
-import { Navbar } from "./components/header";
-import { Home } from "./pages/home";
-import { Order } from "./pages/order";
-import { Login } from "./pages/login";
-import { About } from "./pages/about";
+import { Navbar } from "./components/Header";
+import {About, Home, Order,Login} from './pages';
 
 export default function App() {
   return (
