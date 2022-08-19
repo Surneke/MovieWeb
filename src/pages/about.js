@@ -1,5 +1,6 @@
 import {Container,Box, Typography, Button} from "@mui/material"
 import { useLocation } from "react-router-dom"
+import { Link } from "react-router-dom";
 import '../App.css';
 
 export const About = () => {
@@ -39,9 +40,13 @@ export const About = () => {
                     </Typography>
                     <p>{state.description}</p>
                     <Button
-                        variant="outlined"
+                        variant="contained"
                     >
-                        Захиалга</Button>
+                        <Link 
+                    style={{textDecoration: 'none', color: '#f0f0f0'}} to="/order"
+                    >
+                    Захиалга
+                    </Link></Button>
                 </Box>
             </Box>
         </Container>

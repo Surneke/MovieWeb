@@ -1,5 +1,5 @@
 import {Grid,Container } from "@mui/material";
-import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
     return (
@@ -18,7 +18,7 @@ export const Navbar = () => {
                 item
             >
                 <Link 
-                    style={{textDecoration: 'none'}} to="/"
+                    style={{textDecoration: 'none', color:'black'}} to="/"
                 >
                     Эхлэл
                 </Link></Grid>
@@ -26,14 +26,14 @@ export const Navbar = () => {
                 item
             >
                 <Link 
-                    style={{textDecoration: 'none'}} to="/order"
+                    style={{textDecoration: 'none',color:'black'}} to="/order"
                 >
                     Захиалга</Link></Grid>
             <Grid 
                 item
             >
                 <Link 
-                    style={{textDecoration: 'none'}} to="/login"
+                    style={{textDecoration: 'none',color:'black'}} to="/login"
                 >
                     Нэвтрэх</Link></Grid>
         </Grid>

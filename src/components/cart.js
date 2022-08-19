@@ -21,7 +21,7 @@ export const Cart = (props) => {
             <Button
                 variant="contained"
             >  
-             <Link  style={{textDecoration: 'none'}} to='/about' state={props.el}> Дэлгэрэнгүй </Link>
+             <Link  style={{textDecoration: 'none', color: '#f0f0f0'}} to='/about' state={props.el}> Дэлгэрэнгүй </Link>
               </Button>
         </Grid>
     )
