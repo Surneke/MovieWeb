@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   return (
-    <Container>
+    <Container
+    >
       <Grid
         container
         justifyContent="space-between"
