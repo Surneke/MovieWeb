@@ -1,16 +1,26 @@
-import { Box, Button, Grid, TextField, Typography } from "@mui/material";
-import Checkbox from "@mui/material/Checkbox";
+import { Box, Button, TextField } from "@mui/material";
+import { CountButton } from "../components/CountButton";
+import { Time } from '../components/Time'
 import { useState } from "react";
+import { Seat } from "../components/Seat";
 export const Order = () => {
-
-  const [seatNumber,setSeatNumber] = useState({})
-
+  const [userDetails, setUserDetails] = useState({
+    name:'',
+    email:'',
+    phoneNumber: ''
+  })
+  const handleUseInfo = (e)=>{
+    const {name, value} = e.target
+    setUserDetails({...userDetails, [name]:value})
+  }
+  console.log(userDetails);
   const SuudalA = new Array(10).fill('')
   const SuudalB = new Array(12).fill(0)
   const SuudalC = new Array(14).fill(0)
   const SuudalD = new Array(16).fill(0)
 
   const label = { inputProps: { "aria-label": "Checkbox demo" } };
+
   return (
     <Box
       display="flex"
@@ -24,38 +34,57 @@ export const Order = () => {
         flexDirection="column"
         gap="20px"
         sx={{
-          height: "600px",
           width: "400px",
         }}
       >
-        <TextField id="outlined-basic" label="Нэр" variant="outlined" />
-        <TextField id="outlined-basic" label="Имайл" variant="outlined" />
-        <TextField id="outlined-basic" label="Утас" variant="outlined" />
+        <p>Захиалгын хэсэг</p>
+        <TextField 
+            id="outlined-basic" 
+            value={userDetails.name} 
+            onChange={(e)=> handleUseInfo(e)} 
+            name="name" 
+            variant="outlined"  
+            label='Нэр'
+        />
+        <TextField 
+            id="outlined-basic" 
+            value={userDetails.email} 
+            onChange={(e)=> handleUseInfo(e)} 
+            name="email" 
+            variant="outlined" 
+            label='Имэйл'
+        />
+        <TextField 
+            id="outlined-basic" 
+            value={userDetails.phoneNumber} 
+            onChange={(e)=> handleUseInfo(e)} 
+            name="phoneNumber" 
+            variant="outlined" 
+            label='Утас'
+        />
       </Box>
-      <Box>
-          <Button></Button>
-          <Typography></Typography>
-          <Button></Button>
-      </Box>
+      <CountButton/>
+      <Time/>
       <Box
         display="flex"
         flexDirection="column"
         justifyContent="center"
         alignItems="center"
       >
-       <Box> 
-           {SuudalA.map((el,i) =>  
-           <Checkbox {...label} 
-                value={i+1}
-                size="small" 
-                color="secondary" 
-                onChange= {() => console.log(i)}
-                /> )}
-        </Box>
-       <Box> {SuudalB.map((el) =>  <Checkbox {...label} size="small"  color="secondary" /> )}</Box>
-       <Box> {SuudalC.map((el) =>  <Checkbox {...label} size="small"  color="secondary" /> )}</Box>
-       <Box> {SuudalD.map((el) =>  <Checkbox {...label} size="small"  color="secondary" /> )}</Box>
+         <p>Display</p>
+       <Seat/>
+      <Box
+        display='flex'
+        justifyContent='space-between'
+        sx={{
+          width: '400px'
+        }}
+      >
+        <Button > Буцах </Button>
+        <Button > Хадгалах </Button>
       </Box>
+      </Box>
+      
     </Box>
   );
 };

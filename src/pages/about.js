@@ -9,8 +9,12 @@ export const About = () => {
   console.log();
   return (
     <Container>
-      <Box display="flex" gap="30px">
-        <img height="800px" alt="logo" src={state.img} />
+      <Box 
+        gap="30px"
+        height='400px'
+        width='100%'
+      >
+        <img height="100%" width='100%' alt="logo" src={state.img} />
         <Box
           display="flex"
           justifyContent="center"
