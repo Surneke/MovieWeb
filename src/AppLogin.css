@@ -1,0 +1,38 @@
+body {
+    background-color: #161D29;
+    width: 100%;
+    color: #fff;
+}
+.cartPage {
+    margin-top: 50px;
+    gap: '10px';
+}
+.selectedMovie {
+    margin-top: 170px;
+}
+.box1 {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-image: url('https://sm.mashable.com/mashable_in/photo/default/thor-copy_9gsb.jpg');
+}
+.box2 {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-image: url('https://d1nslcd7m2225b.cloudfront.net/Pictures/1024x536/4/1/7/1249417_Doctor-Strange-promo-still_starring-Benedict-Cumberbatch.jpg');
+}
+.box1:hover {
+    background-image: url('https://thumbs.gfycat.com/DistinctGoodGalapagossealion-max-1mb.gif');
+}
+.box2:hover:hover {
+    background-image: url('https://c.tenor.com/jNGGYr4g4xAAAAAM/benedict-cumberbatch-dr-strange.gif');
+}

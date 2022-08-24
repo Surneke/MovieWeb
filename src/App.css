@@ -1,6 +1,51 @@
-img {
-    border-radius: 20px;
+.homePage {
+    background-image: url('https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/05/avatar-way-of-water-poster-header.jpg?q=50&fit=contain&w=750&h=&dpr=1.5');
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    color: #fff;
 }
-img:hover{
-    opacity: 0.7;
+.header {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    margin-top: 50px;
+}
+#myBtn {
+    color: #fff;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+#mybtn {
+    height: 60px;
+    width: 100px;
+    border-radius: 30px;
+    color: #fff;
+}
+.loginPage {
+    background-color: #161D29;
+    width: 100%;
+    color: #fff;
+    margin-top: 200px;
+}
+.loginPageInput {
+    color: #fff;
+}
+.cartBox {
+    position: relative;
+    z-index: 0;
+    filter: brightness(80%);
+}
+.cartBoxTitle {
+    position: absolute;
+    z-index: 3;
+    top: 500px;
+    margin: auto;
+}
+.orderPage {
+    margin-top: 150px;
 }

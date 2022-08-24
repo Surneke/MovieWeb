@@ -3,17 +3,10 @@ import { CountButton } from "../components/CountButton";
 import { Time } from '../components/Time'
 import { useState } from "react";
 import { Seat } from "../components/Seat";
+import { Link } from "react-router-dom";
+
 export const Order = () => {
-  const [userDetails, setUserDetails] = useState({
-    name:'',
-    email:'',
-    phoneNumber: ''
-  })
-  const handleUseInfo = (e)=>{
-    const {name, value} = e.target
-    setUserDetails({...userDetails, [name]:value})
-  }
-  console.log(userDetails);
+ 
   const SuudalA = new Array(10).fill('')
   const SuudalB = new Array(12).fill(0)
   const SuudalC = new Array(14).fill(0)
@@ -28,41 +21,8 @@ export const Order = () => {
       gap="20px"
       alignItems="center"
       justifyContent="center"
+      className='orderPage'
     >
-      <Box
-        display="flex"
-        flexDirection="column"
-        gap="20px"
-        sx={{
-          width: "400px",
-        }}
-      >
-        <p>Захиалгын хэсэг</p>
-        <TextField 
-            id="outlined-basic" 
-            value={userDetails.name} 
-            onChange={(e)=> handleUseInfo(e)} 
-            name="name" 
-            variant="outlined"  
-            label='Нэр'
-        />
-        <TextField 
-            id="outlined-basic" 
-            value={userDetails.email} 
-            onChange={(e)=> handleUseInfo(e)} 
-            name="email" 
-            variant="outlined" 
-            label='Имэйл'
-        />
-        <TextField 
-            id="outlined-basic" 
-            value={userDetails.phoneNumber} 
-            onChange={(e)=> handleUseInfo(e)} 
-            name="phoneNumber" 
-            variant="outlined" 
-            label='Утас'
-        />
-      </Box>
       <CountButton/>
       <Time/>
       <Box
@@ -80,7 +40,13 @@ export const Order = () => {
           width: '400px'
         }}
       >
-        <Button > Буцах </Button>
+        <Button >
+          <Link 
+              style={{ textDecoration: "none", color: "#f0f0f0" }}
+					     to="/movie" 
+          > 
+              Буцах 
+          </Link></Button>
         <Button > Хадгалах </Button>
       </Box>
       </Box>
