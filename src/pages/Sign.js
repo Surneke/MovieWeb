@@ -5,7 +5,7 @@ import { Theme } from '../theme/muiTheme'
 import { Link } from "react-router-dom";
 import '../AppLogin.css'
 
-export const Login = () => {
+export const Sign = () => {
     const [userDetails, setUserDetails] = useState({
         name: '',
         email: '',
@@ -46,12 +46,12 @@ export const Login = () => {
                     sx={{
                         width: "400px",
                     }}
-                    mt='20px'
+                    mt='50px'
                 >
                     <Typography
                         variant="h5"
                     >
-                        Нэвтрэх
+                        Бүртгүүлэх
                     </Typography>
                     <TextField
 
@@ -60,6 +60,18 @@ export const Login = () => {
                         name="name"
                         variant="standard"
                         label='Нэр'
+                        color="success"
+                        focused
+                    />
+
+                    <TextField
+                        id="outlined-basic"
+                        value={userDetails.email}
+                        onChange={(e) => handleUseInfo(e)}
+                        name="email"
+                        variant="outlined"
+                        label='Имэйл'
+                        sx={styles.form}
                         color="success"
                         focused
                     />
@@ -85,9 +97,9 @@ export const Login = () => {
                     <Button sx={styles.form} >
                         <Link
                             style={{ textDecoration: "none", color: "#f0f0f0" }}
-                            to="/sign"
+                            to="/login"
                         >
-                            Бүртгүүлэх
+                            Нэвтрэх
                         </Link></Button>
                     <Button
                         sx={styles.form}

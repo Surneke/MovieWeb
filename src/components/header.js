@@ -12,13 +12,17 @@ export const Navbar = () => {
         <Grid item>
           <Button id="myBtn" >
             <Link style={{ textDecoration: "none" , color: 'white' }} to="/movie">
-              <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-clapperboard"></i>
             </Link>
           </Button>
         </Grid>
         
         <Grid item>
-          <Typography variant="h3">LIONSGATE</Typography>
+          <Typography variant="h3"> 
+                <Link style={{ textDecoration: "none" , color: 'white' }} to="/">
+                  LCNATICII
+                </Link>
+          </Typography>
         </Grid>
         <Grid item>
           <Button id="myBtn" ><i class="fa-solid fa-magnifying-glass"></i></Button>

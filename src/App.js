@@ -5,9 +5,11 @@ import { Navbar } from "./components/Header";
 import {About} from './pages/about'
 import {Movie} from './pages/movie'
 import {Login} from './pages/login'
+import {Sign} from './pages/Sign'
 import {Home} from './pages/home'
 import {Order} from './pages/order'
 import { Divider } from "@mui/material";
+import {Footer } from './components/Footer'
 
 export default function App() {
   return (
@@ -20,8 +22,10 @@ export default function App() {
                 <Route path={"/movie"} element={<Movie/>}/>
                 <Route path={"/order"} element={<Order/>}/>
                 <Route path={"/login"} element={<Login/>}/>
+                <Route path={"/sign"} element={<Sign/>}/>
                 <Route path={"/about"} element={<About/>}/>
               </Routes>
+            <Footer/>
         </div>
       </Router>
   );

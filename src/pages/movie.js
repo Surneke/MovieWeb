@@ -3,6 +3,7 @@ import { Cart } from "../components/Cart";
 import { Select} from "../components/SelectedMovie"
 import { useCartContext } from "../context/Cartcontext";
 import '../AppLogin.css'
+import { Footer } from "../components/Footer";
 
 export const Movie = () => {
   let { data } = useCartContext();

@@ -6,25 +6,27 @@ export const Cart = (props) => {
         <Box
             className='cartPage'
         >
-            <Box   
+            <Box 
+                gap='10px'  
             >
             <Box
                 component="img"
-                gap="10px"
                 sx={{
                   height: '300px',
+                  width: '200px'
                 }}
                 src={img}
             >
             </Box>
-            <Typography variant="h4" component="h2">
+            <Typography variant="h6" component="h2">
                 {name}
             </Typography>
             <Typography variant="h6" >{time}</Typography>
             <Button
                 variant="contained"
+                
             >  
-             <Link  style={{textDecoration: 'none', color: '#f0f0f0'}} to='/about' state={props.el}> Дэлгэрэнгүй </Link>
+             <Link  style={{textDecoration: 'none', color: '#f0f0f0'}} to='/about' state={props.el}> Дэлгэрэнгүй <i class="fa-solid fa-arrow-right-long"></i> </Link>
               </Button>
             </Box>
         </Box>

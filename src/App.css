@@ -1,12 +1,12 @@
 .homePage {
-    background-image: url('https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/05/avatar-way-of-water-poster-header.jpg?q=50&fit=contain&w=750&h=&dpr=1.5');
     width: 100%;
     background-size: cover;
-    height: 100vh;
+    height: 130vh;
     background-repeat: no-repeat;
     position: relative;
     z-index: 0;
     color: #fff;
+    background-image: url('https://i.kym-cdn.com/photos/images/newsfeed/001/197/053/cb2.gif');
 }
 .header {
     position: absolute;
@@ -35,17 +35,13 @@
 .loginPageInput {
     color: #fff;
 }
-.cartBox {
-    position: relative;
-    z-index: 0;
-    filter: brightness(80%);
-}
-.cartBoxTitle {
+.homeP {
     position: absolute;
-    z-index: 3;
-    top: 500px;
-    margin: auto;
+    z-index: 5;
 }
 .orderPage {
     margin-top: 150px;
+}
+img:hover {
+    scale: 0.40px;
 }

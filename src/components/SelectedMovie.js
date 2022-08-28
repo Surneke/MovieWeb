@@ -25,8 +25,8 @@ export const Select= () => {
                     height: '400px',
                     }}
                 >
-                    <Typography variant="h3">Thor</Typography>
-                    <Typography variant="body2"> Love and Thunde </Typography>
+                    <Typography variant="h3">Doctor Strange</Typography>
+                    <Typography variant="body2"> Multiverse of Madness </Typography>
                 </Box>
                 <Box
                     className="box2"
@@ -34,8 +34,8 @@ export const Select= () => {
                         height: '400px',
                     }}
                 >
-                    <Typography variant="h3">Doctor Strange</Typography>
-                    <Typography variant="body2">Multiverse of Madness</Typography>
+                    <Typography variant="h3">Avangers</Typography>
+                    <Typography variant="body2">End game</Typography>
                 </Box>
                 </Box>
             </Box>

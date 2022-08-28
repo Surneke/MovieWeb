@@ -1,5 +1,7 @@
 import { Container, Box, Typography, Button } from "@mui/material";
 import { useLocation } from "react-router-dom";
+import { CountButton } from "../components/CountButton";
+import { Time } from '../components/Time'
 import { Link } from "react-router-dom";
 import "../App.css";
 import { Footer } from "../components/Footer";
@@ -25,14 +27,7 @@ export const About = () => {
               display="flex"
               flexDirection='column'
               justifyContent='center'
-            >
-                <Box>
-                    <Typography variant="h3">{state.name}</Typography>
-                    <h3>Дэлгэцнээ гарах : {state.date}</h3>
-                    <Typography variant="h5">{state.continueTime}</Typography>
-                </Box>
-                <Box>
-                    <p>{state.description}</p>
+            > 
                     <Box display='flex' gap='20px'>
                       <Button variant="contained">
                         <Link
@@ -44,13 +39,12 @@ export const About = () => {
                       <Button variant="contained">
                         <Link
                           style={{ textDecoration: "none", color: "#f0f0f0" }}
-                          to="/order"
+                          state={props.el}>
                         >
                           Захиалга
                         </Link>
                       </Button>
                     </Box>
-                </Box>
               </Box>
            </Box>
       </Container>

@@ -1,72 +1,122 @@
 export const data =[
     {
-        name:"Nope",
+        name:"Joker",
         date:"2/26/2021",
-        img:"https://www.cnet.com/a/img/resize/3a695e6d3eefbee28cb2efd2dd8aa6e77292fc67/hub/2019/04/11/c6291086-f301-4ce1-beff-c02cc6846594/twilght-zone-jordan-peele-2.jpg?auto=webp&width=768",
+        img:"https://i.pinimg.com/564x/d7/68/0d/d7680d8b4238113922bb2ae7ec435029.jpg",
         time: "9:00AM",
         continueTime: "PG | 130 мин",
         description:" Qui et neque earum perspiciatis magni doloribus rerum quo nulla illo sequi! Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga.Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui et neque earum perspiciatis magni doloribus rerum quo nulla illo sequi! Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga.Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui et neque earum perspiciatis magni doloribus rerum quo nulla illo sequi!" 
     },
     {
-        name:"The Gray Man ",
+        name:"Batman",
         date:"2/26/2021",
-        img:"https://www.cnet.com/a/img/resize/2779d3efbda1a9e0c46f455108dbf4c7cdd4c460/hub/2022/04/26/92a78c1f-7b29-4ebc-a4a6-8d9aaea026f2/gray-man-netflix-gosling-evans-armas-tgm-20210427-09929rv3.jpg?auto=webp&width=768",
+        img:"https://i.pinimg.com/564x/5a/de/35/5ade35249cc2f2d8471b378f14e98390.jpg",
         time: "9:00AM",
         continueTime: "PG | 115 мин",
         description:"et neque earum perspiciatis magni doloribus rerum quo nulla illo sequi! Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga.Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui et neque earum perspiciatis magni doloribus rerum quo nulla illo sequi! Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga.Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui et neque earum perspiciatis magni doloribus rerum quo nulla illo sequi! "
     },
     {
-        name:"DC League of Super-Pets",
+        name:"The suicide squad",
         date:"2/26/2021",
-        img:"https://www.cnet.com/a/img/resize/caa4077aa23afd6ed6d3eba24e05596478f239c1/hub/2021/11/23/a58195b8-0810-4a9e-888f-4eb4897a80bf/dc-league-super-pets-dwayne-johnson-krypto.jpg?auto=webp&width=768",
+        img:"https://i.pinimg.com/564x/90/f0/56/90f0567ac73df5d06ab9a5a7fd6037a9.jpg",
         time: "9:00AM",
         continueTime: "PG | 130 мин",
         description:"Qui et neque earum perspiciatis magni doloribus rerum quo nulla illo sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     {
-        name:"Munich ",
+        name:"Wonder women",
         date:"2/26/2021",
-        img:"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-movies-2022-munich-the-edge-of-war-1643986023.jpeg?crop=0.6xw:1xh;center,top&resize=768:*",
+        img:"https://i.pinimg.com/564x/47/24/5e/47245e837ab96c93100040c67a28e61d.jpg",
         time: "9:00AM",
         continueTime: "PG | 140 мин",
         description:"Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit. amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.dolor sit amet consectetur adipisicing elitLorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     {
-        name:"Bullet Train",
+        name:"Superman",
         date:"2/26/2021",
-        img:"https://www.cnet.com/a/img/resize/cf6ded8ee19a814489742ccbd418e93352ba0863/hub/2022/03/02/ad4435bb-d389-4878-ae82-c74705e71482/bullet-train-brad-pitt1.jpg?auto=webp&width=768",
+        img:"https://i.pinimg.com/564x/44/1a/a4/441aa43bdab03687b7528e0552ccc56a.jpg",
         time: "9:00AM",
         continueTime: "PG | 117 мин",
         description:"  quo nulla illo sequi! Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga.Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui et neque earum perspiciatis magni doloribus rerum quo nulla illo sequi! Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga.Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui et neque earum perspiciatis magni doloribus rerum quo nulla illo sequi! Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga.Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui et neque "
     },
+    //marvel
     {
-        name:"Moonfall",
+        name:"Thor",
         date:"2/26/2021",
-        img:"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-movies-2022-moofall-1639411998.jpeg?crop=0.563xw:1.00xh;0.143xw,0&resize=768:*",
-        time: "9:00AM",
-        continueTime: "PG | 120 мин",
-        description:"Lit. Qui et neque earum perspiciatis magni doloribus rerum quo nulla illo sequi! Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga.Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui et neque earum perspiciatis magni doloribus rerum quo nulla illo sequi!  D sit amet consectetur adipisicing elit. Qui et neque earum perspiciatis magni doloribus rerum quo nulla illo sequi! Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga."
-    },
-    {
-        name:"Kimi",
-        date:"2/26/2021",
-        img:"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-movies-2022-kimi-1644602619.jpeg?crop=0.5609756097560976xw:1xh;center,top&resize=768:*",
+        img:"https://i.pinimg.com/564x/dd/22/ce/dd22ce3040b83b6d549e0605c21ad1e1.jpg",
         time: "9:00AM",
         continueTime: "PG | 120 мин",
         description:"doloribus rerum quo nulla illo sequi! Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga.Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui et neque earum p reiciendis sapiente expedita fuga.Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui et neque earum perspiciatis magni doloribus rerum quo nulla illo sequi! Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga."
     },
     {
-        name:"Marry Me",
+        name:"Black widow",
         date:"2/26/2021",
-        img:"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-movies-2022-marry-me-1639413420.jpeg?crop=0.694xw:1.00xh;0.185xw,0&resize=768:*",
+        img:"https://i.pinimg.com/564x/1f/07/4d/1f074d6115ad45d3efdc87b249d59769.jpg",
         time: "9:00AM",
         continueTime: "PG | 110 мин",
         description:"neque earum perspiciatis magni doloribus rerum quo nulla illo sequi! Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga.Lorem ipsum dolor sit amet consectetur adipisicing saepe eveniet nobis reiciendis sapiente expedita fuga.Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui et neque earum perspiciatis magni doloribus rerum quo nulla illo sequi! Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga."
     },
     {
-        name:"White chicks",
+        name:"Loki",
         date:"2/26/2021",
-        img:"https://s3.r29static.com/bin/entry/362/x,80/2214195/image.jpg",
+        img:"https://i.pinimg.com/564x/eb/b2/00/ebb2005b032c101ab34e803ea643a2c7.jpg",
+        time: "9:00AM",
+        continueTime: "PG | 97 мин",
+        description:"et neque earum perspiciatis magni doloribus rerum quo nulla illo sequi! Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga.Lorem ipsum dolor sit amet consectetur Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga.Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui et neque earum perspiciatis magni doloribus rerum quo nulla illo sequi! Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga."
+    },
+    {
+        name:"Doctor STRANGE",
+        date:"2/26/2021",
+        img:"https://i.pinimg.com/564x/12/b1/26/12b12677b75aea3fe2bf8f0861624746.jpg",
+        time: "9:00AM",
+        continueTime: "PG | 97 мин",
+        description:"et neque earum perspiciatis magni doloribus rerum quo nulla illo sequi! Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga.Lorem ipsum dolor sit amet consectetur Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga.Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui et neque earum perspiciatis magni doloribus rerum quo nulla illo sequi! Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga."
+    },
+    {
+        name:"Wanda vision",
+        date:"2/26/2021",
+        img:"https://i.pinimg.com/564x/8a/6e/cc/8a6eccca9244133bbbcf0fb5719c5ff7.jpg",
+        time: "9:00AM",
+        continueTime: "PG | 97 мин",
+        description:"et neque earum perspiciatis magni doloribus rerum quo nulla illo sequi! Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga.Lorem ipsum dolor sit amet consectetur Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga.Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui et neque earum perspiciatis magni doloribus rerum quo nulla illo sequi! Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga."
+    },
+    //strangr
+    {
+        name:"SpiderMan Far from home",
+        date:"2/26/2021",
+        img:"https://i.pinimg.com/564x/f3/60/ba/f360bad3e05dee131cbab275b0f899c0.jpg",
+        time: "9:00AM",
+        continueTime: "PG | 97 мин",
+        description:"et neque earum perspiciatis magni doloribus rerum quo nulla illo sequi! Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga.Lorem ipsum dolor sit amet consectetur Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga.Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui et neque earum perspiciatis magni doloribus rerum quo nulla illo sequi! Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga."
+    },
+    {
+        name:"No way Home",
+        date:"2/26/2021",
+        img:"https://i.pinimg.com/564x/12/0b/32/120b324cc02098c5ef21c973553e5a5b.jpg",
+        time: "9:00AM",
+        continueTime: "PG | 97 мин",
+        description:"et neque earum perspiciatis magni doloribus rerum quo nulla illo sequi! Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga.Lorem ipsum dolor sit amet consectetur Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga.Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui et neque earum perspiciatis magni doloribus rerum quo nulla illo sequi! Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga."
+    },
+    {
+        name:"Spider-Man",
+        date:"2/26/2021",
+        img:"https://i.pinimg.com/564x/e1/43/f7/e143f7154141abe529ab36a81926257e.jpg",
+        time: "9:00AM",
+        continueTime: "PG | 97 мин",
+        description:"et neque earum perspiciatis magni doloribus rerum quo nulla illo sequi! Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga.Lorem ipsum dolor sit amet consectetur Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga.Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui et neque earum perspiciatis magni doloribus rerum quo nulla illo sequi! Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga."
+    },
+    {
+        name:"The Spectacular",
+        date:"2/26/2021",
+        img:"https://i.pinimg.com/564x/a3/f1/e7/a3f1e72223aa8f4367d2ae73925b9588.jpg",
+        time: "9:00AM",
+        continueTime: "PG | 97 мин",
+        description:"et neque earum perspiciatis magni doloribus rerum quo nulla illo sequi! Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga.Lorem ipsum dolor sit amet consectetur Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga.Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui et neque earum perspiciatis magni doloribus rerum quo nulla illo sequi! Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga."
+    },
+    {
+        name:"Spiderman No way Home",
+        date:"2/26/2021",
+        img:"https://i.pinimg.com/564x/27/28/06/2728060f28ef605bc4484904b436b796.jpg",
         time: "9:00AM",
         continueTime: "PG | 97 мин",
         description:"et neque earum perspiciatis magni doloribus rerum quo nulla illo sequi! Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga.Lorem ipsum dolor sit amet consectetur Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga.Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui et neque earum perspiciatis magni doloribus rerum quo nulla illo sequi! Dolore, soluta tempora saepe eveniet nobis reiciendis sapiente expedita fuga."

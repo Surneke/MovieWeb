@@ -1,9 +1,11 @@
 import { createContext, useContext, useState } from "react";
 import {data} from '../data/data'
 
-export const CartContext = createContext()
+const CartContext = createContext()
 
-export const CartProvider = ({children}) => {
+export const CartProvider = (props) => {
+    const { children } = props
+
     return (
         <CartContext.Provider value={{data}}>
             {children}

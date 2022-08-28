@@ -6,70 +6,20 @@ export const theme = createTheme({
     },
     palette: {
         primary: {
-            main: '#fff'
+            main: '#767F8D'
         },
         secondary: {
             main: '#73bcec'
         },
+        success:{
+            main: '#9CA6B1'
+        },
         background: {
-            default: '#f8f8f8',
+            default: ' #161D29',
         },
         text: {
             primary: '#fff',
         }
     },
-    typography: {
-        h1: {
-            fontFamily: 'Nunito',
-            fontWeight: 800
-        },
-        h2: {
-            fontFamily: 'Nunito',
-            fontWeight: 800
-        },
-        h3: {
-            fontFamily: 'Nunito',
-            fontWeight: 700
-        },
-        h4: {
-            fontFamily: 'Nunito',
-            fontWeight: 700
-        },
-        h5: {
-            fontFamily: 'Nunito',
-            fontWeight: 700
-        },
-        h6: {
-            fontFamily: 'Nunito',
-            fontWeight: 700
-        },
-        subtitle1: {
-            fontFamily: 'Nunito',
-            fontWeight: 700
-        },
-        subtitle2: {
-            fontFamily: 'Nunito',
-            fontWeight: 700
-        },
-        body1: {
-            fontFamily: 'Nunito',
-            fontWeight: 300
-        },
-        body2: {
-            fontFamily: 'Nunito',
-            fontWeight: 300
-        },
-        button: {
-            fontFamily: 'Nunito',
-            fontWeight: 700,
-        },
-        caption: {
-            fontFamily: 'Nunito',
-            fontWeight: 400
-        },
-        overline: {
-            fontFamily: 'Nunito',
-            fontWeight: 300
-        }
-    },
+   
 });
