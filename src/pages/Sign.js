@@ -1,28 +1,27 @@
 import { Box, Grid, Button, TextField, Typography } from "@mui/material";
 import { useState } from "react";
-import { Navbar } from "../components/Header";
-import { Theme } from '../theme/muiTheme'
 import { Link } from "react-router-dom";
 import '../AppLogin.css'
 
 export const Sign = () => {
     const [userDetails, setUserDetails] = useState({
-        name: '',
         email: '',
-        phoneNumber: ''
+        phoneNumber: '',
+        password: '',
+        password1: ''
     })
     const handleUseInfo = (e) => {
         const { name, value } = e.target
         setUserDetails({ ...userDetails, [name]: value })
     }
-
-    const styles = {
-        form: {
-            input: {
-                color: '#9CA6B1'
-            }
+    const handlClicker = (e) => {
+        e.preventDefault()
+        handleUseInfo(e)
+        if(userDetails.password === userDetails.password1) {
+            alert('hi')
         }
     }
+
     return (
         <Grid
             container
@@ -54,24 +53,21 @@ export const Sign = () => {
                         Бүртгүүлэх
                     </Typography>
                     <TextField
-
-                        value={userDetails.name}
-                        onChange={(e) => handleUseInfo(e)}
-                        name="name"
-                        variant="standard"
-                        label='Нэр'
-                        color="success"
-                        focused
-                    />
-
-                    <TextField
-                        id="outlined-basic"
                         value={userDetails.email}
                         onChange={(e) => handleUseInfo(e)}
                         name="email"
-                        variant="outlined"
+                        variant="standard"
                         label='Имэйл'
-                        sx={styles.form}
+                        color="success"
+                        focused
+                    />
+                    <TextField
+                        id="outlined-basic"
+                        value={userDetails.password}
+                        onChange={(e) => handleUseInfo(e)}
+                        name="password"
+                        variant="outlined"
+                        label='Нууц үг'
                         color="success"
                         focused
                     />
@@ -79,10 +75,9 @@ export const Sign = () => {
                         id="outlined-basic"
                         value={userDetails.phoneNumber}
                         onChange={(e) => handleUseInfo(e)}
-                        name="phoneNumber"
+                        name="password2"
                         variant="standard"
-                        label='Утас'
-                        sx={styles.form}
+                        label='Нууц үг давтах'
                         color="success"
                         focused
                     />
@@ -94,7 +89,7 @@ export const Sign = () => {
                         width: '400px'
                     }}
                 >
-                    <Button sx={styles.form} >
+                    <Button >
                         <Link
                             style={{ textDecoration: "none", color: "#f0f0f0" }}
                             to="/login"
@@ -102,8 +97,7 @@ export const Sign = () => {
                             Нэвтрэх
                         </Link></Button>
                     <Button
-                        sx={styles.form}
-                        onClick={handleUseInfo}
+                        onClick={handlClicker}
                     >
                         Хадгалах
                     </Button>

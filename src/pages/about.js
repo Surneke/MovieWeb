@@ -2,7 +2,7 @@ import { Container, Box, Typography, Button } from "@mui/material";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "../App.css";
-import { Footer } from "../components/Footer";
+import { Footer } from "../Components/Footer";
 
 export const About = () => {
   const location = useLocation();

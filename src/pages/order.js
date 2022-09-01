@@ -1,10 +1,10 @@
 import { Box, Button, TextField } from "@mui/material";
-import { CountButton } from "../components/CountButton";
-import { Time } from '../components/Time'
+import { CountButton } from "../Components/CountButton";
+import { Time } from '../Components/Time'
 import { useState,useContext } from "react";
-import { Seat } from "../components/Seat";
+import { Seat } from "../Components/Seat";
 import { Link } from "react-router-dom";
-import {CartContext } from "../context/Cartcontext";
+import {CartContext } from "../Context/Cartcontext";
 
 export const Order = () => {
     const {data}= useContext(CartContext)

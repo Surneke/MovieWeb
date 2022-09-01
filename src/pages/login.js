@@ -1,7 +1,5 @@
 import { Box, Grid, Button, TextField, Typography } from "@mui/material";
 import { useState } from "react";
-import { Navbar } from "../components/Header";
-import { Theme } from '../theme/muiTheme'
 import { Link } from "react-router-dom";
 import '../AppLogin.css'
 
@@ -14,14 +12,6 @@ export const Login = () => {
     const handleUseInfo = (e) => {
         const { name, value } = e.target
         setUserDetails({ ...userDetails, [name]: value })
-    }
-
-    const styles = {
-        form: {
-            input: {
-                color: '#9CA6B1'
-            }
-        }
     }
     return (
         <Grid
@@ -54,25 +44,24 @@ export const Login = () => {
                         Нэвтрэх
                     </Typography>
                     <TextField
-
-                        value={userDetails.name}
-                        onChange={(e) => handleUseInfo(e)}
-                        name="name"
-                        variant="standard"
-                        label='Нэр'
-                        color="success"
-                        focused
+                         id="outlined-basic"
+                         value={userDetails.email}
+                         onChange={(e) => handleUseInfo(e)}
+                         name="email"
+                         variant="standard"
+                         label='Имэйл'
+                         color="success"
+                         focused
                     />
                     <TextField
-                        id="outlined-basic"
-                        value={userDetails.phoneNumber}
-                        onChange={(e) => handleUseInfo(e)}
-                        name="phoneNumber"
-                        variant="standard"
-                        label='Утас'
-                        sx={styles.form}
-                        color="success"
-                        focused
+                         id="outlined-basic"
+                         value={userDetails.password}
+                         onChange={(e) => handleUseInfo(e)}
+                         name="password"
+                         variant="standard"
+                         label='Нууц үг'
+                         color="success"
+                         focused
                     />
                 </Box>
                 <Box
@@ -82,7 +71,7 @@ export const Login = () => {
                         width: '400px'
                     }}
                 >
-                    <Button sx={styles.form} >
+                    <Button>
                         <Link
                             style={{ textDecoration: "none", color: "#f0f0f0" }}
                             to="/sign"
@@ -90,7 +79,6 @@ export const Login = () => {
                             Бүртгүүлэх
                         </Link></Button>
                     <Button
-                        sx={styles.form}
                         onClick={handleUseInfo}
                     >
                         Хадгалах

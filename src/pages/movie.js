@@ -1,9 +1,8 @@
 import { Grid, Container, Box, Typography, Divider } from "@mui/material";
-import { Cart } from "../components/Cart";
-import { Select} from "../components/SelectedMovie"
-import { useCartContext } from "../context/Cartcontext";
+import { Cart } from "../Components/Cart";
+import { Select} from "../Components/SelectedMovie"
+import { useCartContext } from "../Context/Cartcontext";
 import '../AppLogin.css'
-import { Footer } from "../components/Footer";
 
 export const Movie = () => {
   let { data } = useCartContext();

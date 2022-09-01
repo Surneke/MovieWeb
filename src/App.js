@@ -1,17 +1,17 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
-import { Navbar } from "./components/Header";
+import { Navbar } from "./Components/Header";
 // import {About, Home, Order,Login} from './pages';
-import {About} from './pages/about'
-import {Movie} from './pages/movie'
-import {Login} from './pages/login'
-import {Sign} from './pages/Sign'
-import {Home} from './pages/home'
-import {Order} from './pages/order'
+import {About} from './Pages/about'
+import {Movie} from './Pages/movie'
+import {Login} from './Pages/login'
+import {Sign} from './Pages/Sign'
+import {Home} from './Pages/home'
+import {Order} from './Pages/order'
 import { Divider } from "@mui/material";
-import {Footer } from './components/Footer'
+import {Footer } from './Components/Footer'
 
-export default function App() {
+export const App = () => {
   return (
       <Router>
         <div>
